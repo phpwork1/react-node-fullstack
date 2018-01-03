@@ -5,8 +5,8 @@ import * as actions from '../actions';
 
 import Header from './Header';
 import Landing from './Landing';
-const Dashboard = () => <h2>Dashboard</h2>
-const SurveyNew = () => <h2>SurveyNew</h2>
+import Dashboard from './Dashboard';
+import SurveyNew from './surveys/SurveyNew';
 //Browser route only can have 1 child components
 //exact is used to tell router to use exact path when routing
 class App extends Component {
@@ -18,7 +18,7 @@ class App extends Component {
         return (
             <div className="container">
                 <BrowserRouter>
-                    <div>
+                    <div className="container">
                         <Header/>
                         <Route exact path="/" component={Landing}/>
                         <Route exact path="/surveys" component={Dashboard}/>
