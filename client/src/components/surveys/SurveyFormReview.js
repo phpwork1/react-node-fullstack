@@ -1,4 +1,4 @@
-//SurveyFormReview shows user their for input for review
+//SurveyFormReview shows user their input for review
 import React from 'react';
 import _ from 'lodash';
 import {connect} from 'react-redux';
